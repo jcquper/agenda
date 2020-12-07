@@ -1,3 +1,5 @@
-.container{
-  text-align: center;
-}
+body {
+    font-size: 16px;
+    line-height: 1;
+    background-color: #fce4ec;
+  }

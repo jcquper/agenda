@@ -54,7 +54,12 @@ $(document).ready(function(){
     runCheckTime();
     
     function checkStorage () {
-        
+        $(".time-block").children(".description").each(function() {
+            checkTime();
+            if (currentHour > 18){
+                localStorage.clear();
+                alert("Go home you capitalist dream boat, you're not getting paid enough for this.");
+                window.location.reload();
         } else {
     
         scheduledBlock = $(this).parent().attr("id");
